@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Compass</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <nav>
+    <h1>🎯 Career Compass</h1>
+    <ul>
+      <li onclick="showPage('home')">Home</li>
+      <li onclick="showPage('quiz')">Quiz</li>
+      <li onclick="showPage('results')">Results</li>
+      <li onclick="showPage('about')">About</li>
+      <li onclick="showPage('contact')">Contact</li>
+    </ul>
+  </nav>
+
+  <!-- Home Page -->
+  <section id="home" class="active">
+    <h2>Find Your Perfect Career Path</h2>
+    <p>Welcome to Career Compass! Discover which field suits your strengths and interests. Take the quiz to know your ideal career direction.</p>
+    <button onclick="startQuiz()">Start Quiz 🚀</button>
+  </section>
+
+  <!-- Quiz Page -->
+  <section id="quiz">
+    <div class="quiz-container" id="quizBox">
+      <div id="questionText" class="question"></div>
+      <div id="optionsBox" class="options"></div>
+      <div id="progress"></div>
+    </div>
+  </section>
+
+  <!-- Results Page -->
+  <section id="results">
+    <h2>Your Career Suggestion</h2>
+    <div id="resultOutput"></div>
+  </section>
+
+  <!-- About Page -->
+  <section id="about">
+    <h2>About Career Compass</h2>
+    <p>Career Compass helps you explore the right career based on your personality and preferences. Built using HTML, CSS, and JavaScript — it’s a perfect student-level web project with interactive features.</p>
+  </section>
+
+  <!-- Contact Page -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="event.preventDefault(); alert('Message sent successfully!')">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Career Compass | Made by Krati & Mahesh | Jaipur National University
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
